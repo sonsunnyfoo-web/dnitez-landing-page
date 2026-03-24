@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light only">
+<meta name="supported-color-schemes" content="light only">
+<title>Stop Night Urination Ruining Your Sleep — Natural Kidney Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --midnight: #0b1a2d;
+  --deep-navy: #0f2847;
+  --slate: #1b3a5c;
+  --teal: #1a7a6d;
+  --teal-light: #e6f5f2;
+  --warm-amber: #d4972e;
+  --amber-light: #fdf4e3;
+  --cream: #faf7f2;
+  --white: #ffffff;
+  --text-primary: #1a1a2e;
+  --text-body: #3d3d50;
+  --text-muted: #6b7280;
+  --danger: #b33a3a;
+  --danger-bg: #fdf0f0;
+  --success: #1a7a4e;
+  --cta-green: #25D366;
+  --cta-hover: #1eba58;
+  --border: #e5e0d8;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.10);
+  --radius: 12px;
+  --radius-lg: 20px;
+}
+
+html { scroll-behavior: smooth; font-size: 16px; background: #ffffff !important; color-scheme: light; }
+
+body {
+  font-family: 'DM Sans', -apple-system, sans-serif;
+  color: #333333;
+  background: #ffffff !important;
+  line-height: 1.8;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== UTILITY ===== */
+.container { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+.mono { font-family: 'IBM Plex Mono', monospace; }
+.text-center { text-align: center; }
+.text-danger { color: var(--danger); }
+.text-teal { color: var(--teal); }
+.text-amber { color: var(--warm-amber); }
+.text-muted { color: var(--text-muted); }
+.fw-600 { font-weight: 600; }
+.fw-700 { font-weight: 700; }
+
+img { max-width: 100%; height: auto; display: block; }
+
+/* ===== FLOATING CTA ===== */
+.floating-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #ffffff !important;
+  border-top: 1px solid #e0e0e0;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+.floating-cta.visible { transform: translateY(0); }
+.floating-cta__text {
+  font-size: 0.82rem;
+  color: #666666;
+  line-height: 1.3;
+}
+.floating-cta__text strong { color: #111111; }
+
+/* ===== BUTTONS ===== */
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--cta-green);
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 14px 28px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(37,211,102,0.35);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.btn-cta:hover { background: var(--cta-hover); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(37,211,102,0.4); }
+.btn-cta svg { width: 20px; height: 20px; fill: currentColor; }
+
+.btn-cta-full {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  background: var(--cta-green);
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 18px 32px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(37,211,102,0.35);
+}
+.btn-cta-full:hover { background: var(--cta-hover); transform: translateY(-1px); }
+.btn-cta-full svg { width: 22px; height: 22px; fill: currentColor; }
+
+.btn-subtle {
+  font-size: 0.82rem;
+  color: #666666;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(175deg, var(--midnight) 0%, var(--deep-navy) 55%, var(--slate) 100%);
+  color: white;
+  padding: 56px 0 64px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -30%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(26,122,109,0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -20%;
+  left: -20%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(212,151,46,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero__badge {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--warm-amber);
+  background: rgba(212,151,46,0.12);
+  border: 1px solid rgba(212,151,46,0.25);
+  padding: 6px 14px;
+  border-radius: 50px;
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.85rem, 5.5vw, 2.6rem);
+  line-height: 1.2;
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+.hero h1 em {
+  font-style: normal;
+  color: var(--warm-amber);
+}
+
+.hero__sub {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.82);
+  margin-bottom: 32px;
+  max-width: 560px;
+}
+.hero__sub strong { color: rgba(255,255,255,0.95); font-weight: 600; }
+
+.hero__proof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 32px;
+}
+.hero__proof-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.78);
+}
+.hero__proof-item svg { width: 16px; height: 16px; fill: var(--cta-green); flex-shrink: 0; }
+
+/* ===== SECTION COMMON ===== */
+.section { padding: 56px 0; background: #ffffff !important; }
+.section--alt { background: #f7f7f5 !important; }
+.section--dark { background: #0b1a2d !important; color: white; }
+
+.section__label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #14705f;
+  margin-bottom: 12px;
+}
+.section--dark .section__label { color: var(--warm-amber); }
+
+.section__title {
+  font-family: 'DM Sans', sans-serif; font-weight: 800;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  line-height: 1.25;
+  color: #111111;
+  margin-bottom: 16px;
+}
+.section--dark .section__title { color: #ffffff; }
+
+.section__desc {
+  font-size: 1rem;
+  color: #444444;
+  margin-bottom: 32px;
+  max-width: 580px;
+}
+.section--dark .section__desc { color: rgba(255,255,255,0.82); }
+
+/* ===== PROBLEM SECTION ===== */
+.problem-card {
+  background: #ffffff !important;
+  border: 1px solid #e0e0e0;
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.problem-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--danger);
+  border-radius: 4px 0 0 4px;
+}
+.problem-card__q {
+  font-family: 'DM Sans', sans-serif; font-weight: 800;
+  font-size: 1.12rem;
+  color: #111111;
+  margin-bottom: 8px;
+}
+.problem-card__a {
+  font-size: 0.92rem;
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* ===== DANGER CALLOUT ===== */
+.danger-callout {
+  background: #fdf0f0 !important;
+  border: 1px solid #f0c8c8;
+  border-radius: var(--radius);
+  padding: 24px;
+  margin: 32px 0;
+}
+.danger-callout__title {
+  font-weight: 700;
+  color: var(--danger);
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.danger-callout__title svg { width: 18px; height: 18px; fill: var(--danger); flex-shrink: 0; }
+.danger-callout p { font-size: 0.92rem; line-height: 1.7; color: #333333; }
+
+/* ===== SOLUTION SECTION ===== */
+.solution-intro {
+  background: #e8f5f1 !important;
+  border: 1px solid #c5e3db;
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  margin-bottom: 32px;
+}
+.solution-intro__title {
+  font-family: 'DM Sans', sans-serif; font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--teal);
+  margin-bottom: 8px;
+}
+.solution-intro p { font-size: 0.95rem; line-height: 1.8; color: #333333; }
+
+.ingredient-grid { display: flex; flex-direction: column; gap: 14px; }
+
+.ingredient-card {
+  background: #ffffff !important;
+  border: 1px solid #e0e0e0;
+  border-radius: var(--radius);
+  padding: 22px 20px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  transition: box-shadow 0.2s ease;
+}
+.ingredient-card:hover { box-shadow: var(--shadow-md); }
+
+.ingredient-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.3rem;
+}
+.ingredient-card__icon--teal { background: var(--teal-light); }
+.ingredient-card__icon--amber { background: var(--amber-light); }
+.ingredient-card__icon--navy { background: rgba(15,40,71,0.06); }
+
+.ingredient-card__name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #111111;
+  margin-bottom: 2px;
+}
+.ingredient-card__role {
+  font-size: 0.82rem;
+  color: #555555;
+  line-height: 1.6;
+}
+
+/* ===== TIMELINE ===== */
+.timeline { position: relative; padding-left: 32px; margin: 32px 0; }
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--teal), var(--warm-amber));
+  border-radius: 2px;
+}
+.timeline__item {
+  position: relative;
+  margin-bottom: 28px;
+}
+.timeline__item:last-child { margin-bottom: 0; }
+.timeline__dot {
+  position: absolute;
+  left: -28px;
+  top: 4px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 3px solid var(--teal);
+  background: #ffffff;
+}
+.timeline__item:nth-child(2) .timeline__dot { border-color: #3a9988; }
+.timeline__item:nth-child(3) .timeline__dot { border-color: var(--warm-amber); }
+
+.timeline__week {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 4px;
+}
+.timeline__item:nth-child(3) .timeline__week { color: var(--warm-amber); }
+.timeline__text {
+  font-size: 0.95rem;
+  color: #111111;
+  font-weight: 500;
+}
+.timeline__sub {
+  font-size: 0.85rem;
+  color: #555555;
+  margin-top: 2px;
+}
+
+/* ===== TESTIMONIALS ===== */
+.testimonial-card {
+  background: #ffffff !important;
+  border: 1px solid #e0e0e0;
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 16px;
+}
+.testimonial-card__stars {
+  color: var(--warm-amber);
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.testimonial-card__text {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #333333;
+  margin-bottom: 14px;
+  font-style: italic;
+}
+.testimonial-card__author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.testimonial-card__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--teal-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: #14705f;
+}
+.testimonial-card__name { font-weight: 600; font-size: 0.88rem; color: #111111; }
+.testimonial-card__meta { font-size: 0.78rem; color: #666666; }
+
+/* ===== CERT STRIP ===== */
+.cert-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 24px 0;
+}
+.cert-tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  padding: 6px 14px;
+  border-radius: 50px;
+  border: 1px solid rgba(255,255,255,0.25);
+  color: rgba(255,255,255,0.85);
+}
+
+/* ===== FAQ ===== */
+.faq-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 20px 0;
+}
+.faq-item:last-child { border-bottom: none; }
+.faq-q {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #111111;
+  margin-bottom: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-q::after {
+  content: '+';
+  font-size: 1.2rem;
+  color: #888888;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+.faq-item.open .faq-q::after { content: '−'; }
+.faq-a {
+  font-size: 0.9rem;
+  color: #555555;
+  line-height: 1.7;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+.faq-item.open .faq-a { max-height: 300px; padding-top: 8px; }
+
+/* ===== FINAL CTA ===== */
+.final-cta {
+  background: linear-gradient(175deg, var(--deep-navy) 0%, var(--midnight) 100%);
+  color: white;
+  padding: 56px 0 100px;
+  text-align: center;
+}
+.final-cta h2 {
+  font-family: 'DM Sans', sans-serif; font-weight: 800;
+  font-size: clamp(1.5rem, 4.5vw, 2.1rem);
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+.final-cta p {
+  color: rgba(255,255,255,0.82);
+  font-size: 0.95rem;
+  margin-bottom: 32px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.final-cta .guarantee {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.7);
+  margin-top: 16px;
+}
+.final-cta .guarantee svg { width: 16px; height: 16px; fill: var(--warm-amber); }
+
+/* ===== HOW IT WORKS ===== */
+.steps { display: flex; flex-direction: column; gap: 20px; }
+.step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.step__num {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--teal);
+  color: white;
+  font-family: 'DM Sans', sans-serif; font-weight: 800;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.step__title { font-weight: 700; font-size: 0.95rem; color: #111111; margin-bottom: 2px; }
+.step__desc { font-size: 0.88rem; color: #555555; line-height: 1.6; }
+
+/* ===== COMPARISON ===== */
+.comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 28px 0;
+}
+.comparison__col {
+  border-radius: var(--radius);
+  padding: 20px 16px;
+}
+.comparison__col--old {
+  background: #fdf0f0 !important;
+  border: 1px solid #f0c8c8;
+}
+.comparison__col--new {
+  background: #e8f5f1 !important;
+  border: 1px solid #c5e3db;
+}
+.comparison__label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.comparison__col--old .comparison__label { color: var(--danger); }
+.comparison__col--new .comparison__label { color: var(--teal); }
+.comparison__item {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  padding-left: 18px;
+  position: relative;
+}
+.comparison__col--old .comparison__item::before { content: '✗'; position: absolute; left: 0; color: var(--danger); font-weight: 700; font-size: 0.75rem; }
+.comparison__col--new .comparison__item::before { content: '✓'; position: absolute; left: 0; color: var(--teal); font-weight: 700; font-size: 0.75rem; }
+
+/* ===== SOCIAL PROOF COUNTER ===== */
+.proof-bar {
+  background: #f5f5f3 !important;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 20px 0;
+  text-align: center;
+}
+.proof-bar__inner {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.proof-stat__num {
+  font-family: 'DM Sans', sans-serif; font-weight: 800;
+  font-size: 1.6rem;
+  color: #14705f;
+}
+.proof-stat__label {
+  font-size: 0.75rem;
+  color: #555555;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .hero { padding: 44px 0 52px; }
+  .section { padding: 44px 0; }
+  .comparison { grid-template-columns: 1fr; }
+  .floating-cta__text { display: none; }
+  .floating-cta { justify-content: center; }
+  .btn-cta { width: 100%; justify-content: center; font-size: 1rem; padding: 14px 24px; }
+}
+
+/* ===== ANIMATIONS ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== SKIP NAV ===== */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+</style>
+</head>
+
+<body>
+
+<!-- ===== FLOATING CTA BAR ===== -->
+<div class="floating-cta" id="floatingCta">
+  <div class="floating-cta__text">
+    <strong>Free 1-on-1 consultation</strong><br>
+    Find the right plan for your condition
+  </div>
+  <a href="https://wa.me/60XXXXXXXXXX?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20D%27Nitez%20for%20my%20kidney%20health." class="btn-cta" id="floatingBtn">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Chat Now
+  </a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__badge">For those already seeking answers</div>
+    <h1>Waking up 3–5 times a night <em style="font-style: normal; color: var(--warm-amber);">isn't normal ageing.</em><br>It's your kidneys asking for help.</h1>
+    <p class="hero__sub">
+      You've tried drinking less water before bed. You've cut down on caffeine. Maybe you even saw a doctor — but <strong>the nightly trips to the bathroom haven't stopped</strong>, and those foamy bubbles in the toilet won't go away.
+    </p>
+    <a href="#solution" class="btn-cta" style="margin-top: 8px;">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Get Your Free Assessment
+    </a>
+    <div class="hero__proof">
+      <div class="hero__proof-item">
+        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+        10,000+ customers in MY &amp; SG
+      </div>
+      <div class="hero__proof-item">
+        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+        KKM &amp; NPRA certified
+      </div>
+      <div class="hero__proof-item">
+        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+        100% herbal, no side effects
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SOCIAL PROOF BAR ===== -->
+<div class="proof-bar">
+  <div class="proof-bar__inner">
+    <div class="proof-stat">
+      <div class="proof-stat__num">10,000+</div>
+      <div class="proof-stat__label">Customers served</div>
+    </div>
+    <div class="proof-stat">
+      <div class="proof-stat__num">6 Years</div>
+      <div class="proof-stat__label">Of R&D</div>
+    </div>
+    <div class="proof-stat">
+      <div class="proof-stat__num">7</div>
+      <div class="proof-stat__label">Certifications</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== THE REAL PROBLEM ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section__label">Sound familiar?</div>
+    <h2 class="section__title">The things you've been telling yourself</h2>
+    <p class="section__desc">If you're reading this, chances are you've already tried a few things. And none of them have really worked.</p>
+
+    <div class="problem-card fade-in">
+      <div class="problem-card__q">"I just drink too much water at night"</div>
+      <div class="problem-card__a">You've already cut back. You stop drinking by 7pm. But you're still up at 2am, 3am, 4am. The problem isn't the water — it's how your kidneys are processing it.</div>
+    </div>
+
+    <div class="problem-card fade-in">
+      <div class="problem-card__q">"It's probably just my age, everyone goes through this"</div>
+      <div class="problem-card__a">Frequent night urination (nocturia) affects many people — but it's not inevitable. It's a signal that your kidney filtration isn't working at full capacity, and it often gets worse without intervention.</div>
+    </div>
+
+    <div class="problem-card fade-in">
+      <div class="problem-card__q">"The foamy urine comes and goes, so it's probably fine"</div>
+      <div class="problem-card__a">Persistent foamy urine can indicate excess protein leaking through your kidneys. Even if it seems intermittent, this is worth paying attention to — it's one of the early signs of declining kidney function.</div>
+    </div>
+
+    <div class="danger-callout fade-in">
+      <div class="danger-callout__title">
+        <svg viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+        Here's what most people don't realise
+      </div>
+      <p>Night urination and foamy urine aren't just inconveniences — they're early warning signs. Left unaddressed, declining kidney function can progress to Chronic Kidney Disease (CKD), and eventually to dialysis. <strong>The window to act is now, while your kidneys can still recover.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY NOTHING HAS WORKED ===== -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__label">The real issue</div>
+    <h2 class="section__title">Why what you've tried hasn't worked</h2>
+    <p class="section__desc">Most approaches only address the symptoms. They don't support the organ that's actually struggling.</p>
+
+    <div class="comparison fade-in">
+      <div class="comparison__col comparison__col--old">
+        <div class="comparison__label">What most people try</div>
+        <div class="comparison__item">Drink less water at night</div>
+        <div class="comparison__item">Avoid caffeine and alcohol</div>
+        <div class="comparison__item">Prescription medication</div>
+        <div class="comparison__item">Just "live with it"</div>
+      </div>
+      <div class="comparison__col comparison__col--new">
+        <div class="comparison__label">What actually helps</div>
+        <div class="comparison__item">Support kidney filtration</div>
+        <div class="comparison__item">Protect kidney cells from damage</div>
+        <div class="comparison__item">Improve bladder &amp; prostate function</div>
+        <div class="comparison__item">Restore deep, unbroken sleep</div>
+      </div>
+    </div>
+
+    <p style="font-size:0.92rem; color: var(--text-muted); margin-top: 20px;">The difference? One treats the surface. The other supports the root — your kidneys, bladder, and sleep cycle — so your body can actually heal.</p>
+  </div>
+</section>
+
+<!-- ===== THE SOLUTION ===== -->
+<section class="section" id="solution">
+  <div class="container">
+    <div class="section__label">The solution</div>
+    <h2 class="section__title">D'Nitez+ — kidney support that works while you sleep</h2>
+
+    <div class="solution-intro fade-in">
+      <div class="solution-intro__title">A different approach</div>
+      <p>Instead of masking symptoms with medication, D'Nitez+ uses a targeted herbal formula to support your kidneys, calm your nervous system, and restore your body's natural sleep-repair cycle. Take one sachet before bed — that's it.</p>
+    </div>
+
+    <p class="fw-600" style="color: var(--text-primary); margin-bottom: 16px;">8 active ingredients, working in 3 layers:</p>
+
+    <div class="ingredient-grid">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal); margin-top: 8px;">Layer 1 — Kidney & Bladder Protection</div>
+
+      <div class="ingredient-card fade-in">
+        <div class="ingredient-card__icon ingredient-card__icon--teal">🛡</div>
+        <div>
+          <div class="ingredient-card__name">NAC (N-Acetyl Cysteine)</div>
+          <div class="ingredient-card__role">A powerful antioxidant that protects kidney cells from oxidative damage, supports detoxification, and helps reduce protein leakage (the cause of foamy urine).</div>
+        </div>
+      </div>
+
+      <div class="ingredient-card fade-in">
+        <div class="ingredient-card__icon ingredient-card__icon--teal">🌿</div>
+        <div>
+          <div class="ingredient-card__name">Saw Palmetto Extract</div>
+          <div class="ingredient-card__role">Clinically studied for relieving frequent urination, urgency, nocturia, and prostate discomfort — directly addressing the nighttime bathroom trips.</div>
+        </div>
+      </div>
+
+      <div class="ingredient-card fade-in">
+        <div class="ingredient-card__icon ingredient-card__icon--teal">🌱</div>
+        <div>
+          <div class="ingredient-card__name">Griffonia Simplicifolia Extract</div>
+          <div class="ingredient-card__role">A natural 5-HTP source that improves sleep quality while supporting bladder and kidney function.</div>
+        </div>
+      </div>
+
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--warm-amber); margin-top: 12px;">Layer 2 — Deep Sleep Restoration</div>
+
+      <div class="ingredient-card fade-in">
+        <div class="ingredient-card__icon ingredient-card__icon--amber">😴</div>
+        <div>
+          <div class="ingredient-card__name">Natural GABA (from Almond Protein)</div>
+          <div class="ingredient-card__role">Calms the nervous system and promotes deep, restorative sleep — so your body can repair while you rest.</div>
+        </div>
+      </div>
+
+      <div class="ingredient-card fade-in">
+        <div class="ingredient-card__icon ingredient-card__icon--amber">🍋</div>
+        <div>
+          <div class="ingredient-card__name">Lemon Balm + Chamomile + Valerian Root</div>
+          <div class="ingredient-card__role">A time-tested trio for calming anxiety, relaxing nerves, and treating sleep disorders — without dependency.</div>
+        </div>
+      </div>
+
+      <div class="ingredient-card fade-in">
+        <div class="ingredient-card__icon ingredient-card__icon--amber">☕</div>
+        <div>
+          <div class="ingredient-card__name">L-Theanine</div>
+          <div class="ingredient-card__role">Promotes calm focus and relaxation without drowsiness. Helps you fall asleep faster and stay asleep longer.</div>
+        </div>
+      </div>
+
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--slate); margin-top: 12px;">Layer 3 — Absorption & Recovery</div>
+
+      <div class="ingredient-card fade-in">
+        <div class="ingredient-card__icon ingredient-card__icon--navy">⚡</div>
+        <div>
+          <div class="ingredient-card__name">DigeZyme® (Multi-Enzyme Complex)</div>
+          <div class="ingredient-card__role">Ensures your body absorbs all the active ingredients effectively, accelerating the recovery process.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHAT TO EXPECT ===== -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__label">Your journey</div>
+    <h2 class="section__title">What to expect over 8 weeks</h2>
+    <p class="section__desc">Most users notice initial improvements within the first 2 weeks. Here's a typical progression:</p>
+
+    <div class="timeline fade-in">
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__week">Week 1–2</div>
+        <div class="timeline__text">Night urination begins to reduce. Less foamy urine.</div>
+        <div class="timeline__sub">You start sleeping through longer stretches without waking up.</div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__week">Week 3–4</div>
+        <div class="timeline__text">Urine colour and odour normalise. Back pain eases.</div>
+        <div class="timeline__sub">Deeper sleep cycles. Morning energy levels improve noticeably.</div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__week">Week 5–8</div>
+        <div class="timeline__text">Full nights of unbroken sleep. No more foamy urine.</div>
+        <div class="timeline__sub">Mental clarity returns. Physical stamina improves. Kidney function stabilises.</div>
+      </div>
+    </div>
+
+    <div style="margin-top: 36px; text-align: center;">
+      <a href="https://wa.me/60XXXXXXXXXX?text=Hi%2C%20I%20want%20to%20check%20which%20D%27Nitez%20plan%20is%20right%20for%20me." class="btn-cta-full">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Find Out Which Plan Suits You — Free Chat
+      </a>
+      <div class="btn-subtle">No obligation. Takes 2 minutes. Cash on delivery available.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section__label">Real stories</div>
+    <h2 class="section__title">From people who were exactly where you are</h2>
+
+    <div class="testimonial-card fade-in">
+      <div class="testimonial-card__stars">★★★★★</div>
+      <div class="testimonial-card__text">"I used to wake up 4-5 times every night. My wife couldn't sleep either because of me. After 3 weeks on D'Nitez, I'm down to once — sometimes not at all. I actually feel rested in the morning for the first time in years."</div>
+      <div class="testimonial-card__author">
+        <div class="testimonial-card__avatar">AH</div>
+        <div>
+          <div class="testimonial-card__name">Ahmad H.</div>
+          <div class="testimonial-card__meta">Age 58 · Johor Bahru</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card fade-in">
+      <div class="testimonial-card__stars">★★★★★</div>
+      <div class="testimonial-card__text">"The foamy urine was what scared me. My doctor said to monitor it, but didn't give me anything. After 6 weeks of D'Nitez, the foam is almost completely gone and my kidney index actually improved at my next checkup."</div>
+      <div class="testimonial-card__author">
+        <div class="testimonial-card__avatar">LC</div>
+        <div>
+          <div class="testimonial-card__name">Lim C.K.</div>
+          <div class="testimonial-card__meta">Age 52 · Penang</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card fade-in">
+      <div class="testimonial-card__stars">★★★★★</div>
+      <div class="testimonial-card__text">"My father is 78. He was getting up 5-6 times at night and we were worried about falls. We started him on D'Nitez — within a month it went down to 1-2 times. He sleeps so much better now and has more energy during the day."</div>
+      <div class="testimonial-card__author">
+        <div class="testimonial-card__avatar">SR</div>
+        <div>
+          <div class="testimonial-card__name">Sarah R.</div>
+          <div class="testimonial-card__meta">Daughter of customer · KL</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CERTIFICATIONS & TRUST ===== -->
+<section class="section section--dark">
+  <div class="container text-center">
+    <div class="section__label">Trust &amp; safety</div>
+    <h2 class="section__title">Developed by a medical R&D team over 6 years</h2>
+    <p class="section__desc" style="margin-left:auto; margin-right:auto;">D'Nitez+ isn't another generic supplement. It was formulated by a professional medical team and holds more safety certifications than almost any product in its category.</p>
+
+    <div class="cert-strip">
+      <span class="cert-tag">KKM (MOH Malaysia)</span>
+      <span class="cert-tag">NPRA</span>
+      <span class="cert-tag">SGS International</span>
+      <span class="cert-tag">GMP Certified</span>
+      <span class="cert-tag">HALAL</span>
+      <span class="cert-tag">HACCP</span>
+      <span class="cert-tag">FDA</span>
+    </div>
+
+    <div style="margin-top: 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
+      <span class="cert-tag" style="border-color: var(--warm-amber); color: var(--warm-amber);">🏆 2022 Best Natural Kidney Product</span>
+      <span class="cert-tag" style="border-color: var(--warm-amber); color: var(--warm-amber);">🏆 2025 Golden Bull Award</span>
+    </div>
+
+    <p style="margin-top: 28px; font-size: 0.88rem; color: rgba(255,255,255,0.78);">100% herbal. No western medicine. No dependency. No side effects.<br>Safe for the elderly, diabetics, and those with high blood pressure.</p>
+  </div>
+</section>
+
+<!-- ===== HOW TO USE ===== -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__label">Simple to use</div>
+    <h2 class="section__title">Just one sachet before bed</h2>
+    <p class="section__desc">No mixing, no brewing, no complicated routine. Here's how it works:</p>
+
+    <div class="steps fade-in">
+      <div class="step">
+        <div class="step__num">1</div>
+        <div>
+          <div class="step__title">Tear open the sachet</div>
+          <div class="step__desc">Take it about 1 hour before you plan to sleep.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num">2</div>
+        <div>
+          <div class="step__title">Pour directly into your mouth</div>
+          <div class="step__desc">Take 2–3 small mouthfuls per sachet. Follow with a sip of water.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num">3</div>
+        <div>
+          <div class="step__title">Sleep &amp; let it work</div>
+          <div class="step__desc">The formula works while you sleep, supporting kidney repair and deep rest. If you take other medication, space it 1 hour apart.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section__label">Common questions</div>
+    <h2 class="section__title">Before you decide</h2>
+
+    <div class="faq-item open">
+      <div class="faq-q" onclick="toggleFaq(this)">Is D'Nitez safe for long-term use?</div>
+      <div class="faq-a">Yes. D'Nitez is 100% herbal with no western medicine compounds. It has no dependency and no known side effects. It's been certified safe by KKM (Malaysia's Ministry of Health), NPRA, and SGS International.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Can I take it if I have diabetes or high blood pressure?</div>
+      <div class="faq-a">Yes. D'Nitez is formulated to be safe for people with diabetes, high blood pressure, and high cholesterol. If you're currently on medication, simply take D'Nitez at least 1 hour apart from your medicine.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How soon will I see results?</div>
+      <div class="faq-a">Most users report noticeable improvement in night urination and sleep quality within 2 weeks. For foamy urine and deeper kidney support, 4–8 weeks of consistent use typically shows significant progress.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Is this a medicine or a supplement?</div>
+      <div class="faq-a">D'Nitez is classified as a natural health supplement, not a medicine. It contains only herbal extracts and natural compounds — no pharmaceutical drugs. Think of it as targeted nutritional support for your kidneys and sleep cycle.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How do I purchase and receive the product?</div>
+      <div class="faq-a">Simply chat with us on WhatsApp. We'll recommend the right plan based on your condition (3-box, 6-box, or 9-box packages available). We offer cash on delivery and instalment options. Free 1-on-1 follow-up service included.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What if I'm already seeing a doctor for kidney issues?</div>
+      <div class="faq-a">D'Nitez can complement your medical treatment. Many customers take it alongside their doctor's recommendations. We encourage you to continue your medical checkups — many customers report improved kidney index readings after consistent use.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final-cta">
+  <div class="container">
+    <h2>Your kidneys won't wait.<br>But they <em style="color: var(--warm-amber); font-style: normal; font-weight: 800;">can</em> recover.</h2>
+    <p>Every week you delay is a week closer to a point where natural recovery gets harder. Talk to us today — we'll assess your condition and recommend the right plan. No obligation.</p>
+
+    <a href="https://wa.me/60XXXXXXXXXX?text=Hi%2C%20I%20saw%20the%20D%27Nitez%20page%20and%20would%20like%20a%20free%20assessment%20for%20my%20condition." class="btn-cta-full" style="max-width: 480px; margin: 0 auto;">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Start Your Free Assessment on WhatsApp
+    </a>
+    <div class="guarantee">
+      <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+      Cash on delivery &nbsp;·&nbsp; Instalment plans available &nbsp;·&nbsp; Free 1-on-1 follow-up
+    </div>
+  </div>
+</section>
+
+<script>
+// Floating CTA visibility
+const floatingCta = document.getElementById('floatingCta');
+let lastScroll = 0;
+
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  if (scrollY > 500) {
+    floatingCta.classList.add('visible');
+  } else {
+    floatingCta.classList.remove('visible');
+  }
+  lastScroll = scrollY;
+});
+
+// FAQ toggle
+function toggleFaq(el) {
+  const item = el.parentElement;
+  item.classList.toggle('open');
+}
+
+// Fade-in on scroll
+const fadeEls = document.querySelectorAll('.fade-in');
+const fadeObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      fadeObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+fadeEls.forEach(el => fadeObserver.observe(el));
+</script>
+
+</body>
+</html>
