@@ -22,6 +22,8 @@ html {
   background-color: var(--bg-main); 
   color: var(--text-main);
   font-family: 'Inter', -apple-system, sans-serif;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -29,6 +31,8 @@ body {
   background-attachment: fixed;
   line-height: 1.6;
   overflow-x: hidden;
+  width: 100%;
+  position: relative;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -537,6 +541,9 @@ a { text-decoration: none; }
   .testimonial-grid { 
     display: flex; 
     overflow-x: auto; 
+    overflow-y: hidden;
+    overscroll-behavior-y: none;
+    align-items: center;
     scroll-snap-type: x mandatory; 
     gap: 16px; 
     padding-bottom: 24px; 
@@ -552,6 +559,7 @@ a { text-decoration: none; }
   .testimonial-screenshot {
     flex: 0 0 88%;
     scroll-snap-align: start;
+    scroll-snap-stop: always;
     width: 88%;
   }
   
