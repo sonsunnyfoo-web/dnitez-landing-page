@@ -588,7 +588,6 @@ a { text-decoration: none; }
   .how-to-section .section__title, .how-to-section .section__desc { text-align: center; margin-left: auto; margin-right: auto; }
   .sachets-img { max-width: 80%; max-height: none; }
 }
-
 /* ===== SPECIAL HERO FULL BG CLASSES ===== */
 .hero--special-bg {
   background-image: url('Product%20Image/tired_man_far_right.png');
@@ -797,161 +796,37 @@ a { text-decoration: none; }
 
 .split-compare__list li {
   display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-  gap: 15px;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
 }
-
 .split-compare__list li:last-child {
   margin-bottom: 0;
 }
-
 .split-compare__icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 24px; height: 24px;
   flex-shrink: 0;
-}
-
-.split-compare-col--bad .split-compare__icon {
-  border: 2px solid #cbd5e1;
-  color: #4a5568;
-}
-
-.split-compare-col--good .split-compare__icon {
-  background: rgba(255,255,255,0.1);
-  border: 2px solid rgba(255,255,255,0.2);
-  color: #ffffff;
-}
-
-.split-compare__text {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.split-compare__text strong {
-  font-family: 'Outfit', sans-serif;
-  font-size: 1.1rem;
-  margin-bottom: 4px;
-}
-
-.split-compare__text span {
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bold;
   font-size: 0.9rem;
-  opacity: 0.8;
 }
-
-.split-compare__status {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  border: 2px solid currentColor;
-}
-
-.split-compare-col--bad .split-compare__status {
-  border-color: #a0aec0;
-  color: #4a5568;
-}
-
-.split-compare-col--good .split-compare__status {
-  border-color: #2ed573;
-  background: #2ed573;
-  color: #ffffff;
-}
-
-.split-compare__vs-wrapper {
-  width: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-  position: relative;
-}
-
-.split-compare__vs {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  position: absolute;
-  background: #0d254f;
-  border: 4px solid #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-family: 'Outfit', sans-serif;
-  font-size: 1.4rem;
-  color: #ffffff;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-.split-compare__title {
-  text-align: center;
-  font-family: 'Outfit', sans-serif;
-  font-size: 1.3rem;
-  font-weight: 800;
-  margin-bottom: 5px;
-}
-
-.split-compare__subtitle {
-  text-align: center;
-  font-size: 0.95rem;
-  opacity: 0.8;
-  margin-bottom: 40px;
-}
+.split-compare__icon--bad { background: var(--danger); }
+.split-compare__icon--good { background: var(--accent-teal); }
+.split-compare__text { font-size: 1.05rem; line-height: 1.5; }
 
 @media (max-width: 768px) {
   .split-compare-box { flex-direction: column; }
-  .split-compare__vs-wrapper { width: 100%; height: 0; }
   .split-compare-col { padding: 30px 20px; }
 }
 
-
-/* ===== SPLIT COMPARE PRODUCT LAYOUT ===== */
-.split-compare-layout {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-top: 40px;
+@media (max-width: 768px) {
+  .btn-cta, .btn-cta-full {
+    font-size: 0.9rem;
+    padding: 14px 20px;
+    gap: 8px;
+    line-height: 1.3;
+    text-align: center;
+  }
 }
-
-.split-compare-box {
-  flex: 0 0 80%;
-  max-width: 1100px;
-  position: relative;
-  z-index: 2;
-  margin-top: 0;
-}
-
-.split-compare-product {
-  position: absolute;
-  right: -30px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 320px;
-  z-index: 1;
-}
-
-.split-compare-product img {
-  width: 100%;
-  height: auto;
-  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.4));
-}
-
-@media (max-width: 1200px) {
-  .split-compare-product { right: -10px; width: 280px; }
-  .split-compare-box { flex: 0 0 90%; }
-}
-
-@media (max-width: 992px) {
-  .split-compare-box { flex: 0 0 100%; }
-  .split-compare-product { display: none; }
-}
-
