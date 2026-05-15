@@ -1,17 +1,5 @@
 // script.js
-// Floating CTA visibility
-const floatingCta = document.getElementById('floatingCta');
-let lastScroll = 0;
 
-window.addEventListener('scroll', () => {
-  const scrollY = window.scrollY;
-  if (scrollY > 500) {
-    floatingCta.classList.add('visible');
-  } else {
-    floatingCta.classList.remove('visible');
-  }
-  lastScroll = scrollY;
-});
 
 // FAQ toggle
 function toggleFaq(el) {
